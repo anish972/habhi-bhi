@@ -219,7 +219,6 @@ export default function GamesPage() {
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-4">
           <h2 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-green-500 mb-4">
             Premium Game Servers
           </h2>
