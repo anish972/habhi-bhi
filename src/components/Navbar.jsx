@@ -124,7 +124,7 @@ export default function Navbar() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <Link to="/" className="flex items-center space-x-2">
-                <span className="text-3xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
+                <span className="text-3xl font-bold bg-gradient-to-r from-blue-500 via-teal-500 to-green-500 text-transparent bg-clip-text">
                   GameHub
                 </span>
               </Link>
@@ -173,7 +173,7 @@ export default function Navbar() {
               <div className="flex items-center space-x-2 ml-4">
                 <button
                   onClick={() => handleNavigation("/client")}
-                  className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2 rounded-lg 
+                  className="bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white px-6 py-2 rounded-lg 
                            transition-all hover:scale-105 font-medium flex items-center group"
                 >
                   <User
@@ -307,7 +307,7 @@ export default function Navbar() {
               <div className="p-4 bg-gray-900 border-t border-gray-800">
                 <button
                   onClick={() => handleNavigation("/client")}
-                  className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white p-4 rounded-lg transition-all flex items-center justify-center space-x-2 font-medium shadow-lg"
+                  className="w-full bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white p-4 rounded-lg transition-all flex items-center justify-center space-x-2 font-medium shadow-lg"
                 >
                   <User size={18} />
                   <span>Client Area</span>

@@ -19,6 +19,7 @@ const NotFound = () => {
           </div>
 
           <h1 className="text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+          <h1 className="text-7xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-green-500">
             404
           </h1>
 

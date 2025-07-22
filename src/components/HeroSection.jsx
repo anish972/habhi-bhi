@@ -56,7 +56,7 @@ const StatsCard = ({
         <Icon className="mr-2" size={24} />
         <span className="text-sm font-medium">{label}</span>
       </div>
-      <div className="text-3xl font-bold text-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 group-hover:text-transparent group-hover:bg-clip-text transition-all duration-500">
+      <div className="text-3xl font-bold text-white group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-teal-400 group-hover:text-transparent group-hover:bg-clip-text transition-all duration-500">
         <AnimatedValue value={value} decimals={decimals} />
         {suffix}
       </div>
@@ -74,7 +74,7 @@ const FeatureCard = ({ icon: Icon, title, description }) => (
       <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-500/10 to-purple-500/10 p-2.5 mb-4 transform transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
         <Icon className="w-full h-full text-blue-400 group-hover:text-blue-300 transition-colors" />
       </div>
-      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-purple-400 transition-all duration-500">
+      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-teal-400 transition-all duration-500">
         {title}
       </h3>
       <p className="text-gray-400 text-sm leading-relaxed">{description}</p>
@@ -101,7 +101,7 @@ export default function HeroSection() {
 
         {/* Animated Glows */}
         <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-blue-500/20 rounded-full filter blur-3xl animate-pulse" />
-        <div className="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-purple-500/20 rounded-full filter blur-3xl animate-pulse delay-1000" />
+        <div className="absolute bottom-0 -right-1/4 w-1/2 h-1/2 bg-teal-500/20 rounded-full filter blur-3xl animate-pulse delay-1000" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -122,7 +122,7 @@ export default function HeroSection() {
 
         {/* Main Content */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-green-500">
             Level Up Your Gaming Experience
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto font-medium leading-relaxed">
@@ -134,7 +134,7 @@ export default function HeroSection() {
           <div className="flex flex-wrap justify-center gap-4 mb-16">
             <a
               href="/games"
-              className="group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 rounded-xl transition-all hover:scale-105 duration-500 font-medium flex items-center shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40"
+              className="group bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 text-white px-8 py-4 rounded-xl transition-all hover:scale-105 duration-500 font-medium flex items-center shadow-lg shadow-blue-500/25 hover:shadow-teal-500/40"
             >
               <Gamepad size={20} className="mr-2" />
               Deploy Game Server
@@ -145,7 +145,7 @@ export default function HeroSection() {
             </a>
             <a
               href="example.com"
-              className="group bg-gray-800/50 hover:bg-gray-800 text-white px-8 py-4 rounded-xl transition-all hover:scale-105 duration-500 font-medium backdrop-blur-sm border border-gray-700/50 hover:border-blue-500/50 flex items-center"
+              className="group bg-gray-800/50 hover:bg-gray-800 text-white px-8 py-4 rounded-xl transition-all hover:scale-105 duration-500 font-medium backdrop-blur-sm border border-gray-700/50 hover:border-teal-500/50 flex items-center"
             >
               Contact Us
               <ArrowRight

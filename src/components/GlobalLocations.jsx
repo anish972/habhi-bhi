@@ -57,6 +57,7 @@ const LocationCard = ({ region }) => (
       </div>
 
       <h3 className="text-2xl font-bold text-white mb-3 bg-clip-text text-transparent bg-gradient-to-r from-white to-white group-hover:from-blue-500 group-hover:to-purple-500 transition-all duration-300">
+      <h3 className="text-2xl font-bold text-white mb-3 bg-clip-text text-transparent bg-gradient-to-r from-white to-white group-hover:from-blue-500 group-hover:to-teal-500 transition-all duration-300">
         {region.region}
       </h3>
 
@@ -69,6 +70,7 @@ const LocationCard = ({ region }) => (
         <div className="bg-gray-900/50 rounded-xl p-4 border border-gray-700/50 group-hover:border-blue-500/20 transition-all duration-300">
           <div className="text-sm text-gray-400 mb-1">Servers</div>
           <div className="font-bold text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+          <div className="font-bold text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-500">
             {region.stats}
           </div>
         </div>
@@ -84,6 +86,7 @@ const LocationCard = ({ region }) => (
             className="flex items-center text-gray-300 group-hover:text-white transition-colors"
           >
             <div className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 mr-2" />
+            <div className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 mr-2" />
             {location}
           </motion.div>
         ))}
@@ -110,6 +113,7 @@ export function GlobalLocations() {
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent" />
       <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-blue-500/10 rounded-full blur-3xl" />
       <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-purple-500/10 rounded-full blur-3xl" />
+     <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-teal-500/10 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <motion.div
@@ -118,6 +122,7 @@ export function GlobalLocations() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-4">
+          <h2 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-green-500 mb-4">
             Global Network Presence
           </h2>
           <p className="text-xl md:text-2xl font-semibold text-gray-300 mb-8 max-w-3xl mx-auto">
