@@ -87,7 +87,7 @@ const PARTNERS = [
 
 const PartnerCard = ({ partner }) => (
   <div className="relative group">
-    <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
+    <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
     <div className="relative bg-gray-900 rounded-2xl p-6 h-full">
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center space-x-4">
@@ -104,7 +104,7 @@ const PartnerCard = ({ partner }) => (
           </div>
         </div>
         {partner.badge && (
-          <div className="bg-purple-500/10 text-purple-400 px-3 py-1 rounded-full text-sm font-medium border border-purple-500/20">
+          <div className="bg-teal-500/10 text-teal-400 px-3 py-1 rounded-full text-sm font-medium border border-teal-500/20">
             {partner.badge}
           </div>
         )}
@@ -117,7 +117,7 @@ const PartnerCard = ({ partner }) => (
       <div className="grid grid-cols-3 gap-4 mb-6">
         {Object.entries(partner.stats).map(([key, value]) => (
           <div key={key} className="bg-gray-800/50 rounded-lg p-3 border border-gray-700/50">
-            <div className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+            <div className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-400">
               {value}
             </div>
             <div className="text-sm text-gray-400 capitalize">{key}</div>
@@ -128,7 +128,7 @@ const PartnerCard = ({ partner }) => (
       <div className="space-y-3">
         {partner.features.map((feature, index) => (
           <div key={index} className="flex items-center text-gray-300 bg-gray-800/30 rounded-lg p-2">
-            <Sparkles size={16} className="text-purple-400 mr-2 flex-shrink-0" />
+            <Sparkles size={16} className="text-teal-400 mr-2 flex-shrink-0" />
             <span>{feature}</span>
           </div>
         ))}
@@ -139,10 +139,10 @@ const PartnerCard = ({ partner }) => (
 
 const StatsCard = ({ icon: Icon, value, label }) => (
   <div className="relative group">
-    <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
+    <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-600 to-blue-600 rounded-xl blur opacity-25 group-hover:opacity-75 transition duration-300"></div>
     <div className="relative bg-gray-900 rounded-xl p-6">
       <Icon size={24} className="text-purple-400 mb-4" />
-      <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+      <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-teal-400">
         {value}
       </div>
       <div className="text-gray-400 font-medium">{label}</div>
@@ -176,7 +176,7 @@ export default function PartnersPage() {
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-teal-400 to-green-400">
               Our Gaming Partners
             </span>
           </h1>
