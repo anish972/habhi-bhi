@@ -27,7 +27,7 @@ const NotFound = () => {
           </h2>
 
           <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto font-medium">
-            It seems you’ve hit a dead end. Maybe you can return to the homepage and start over?
+            It seems you've hit a dead end. Maybe you can return to the homepage and start over?
           </p>
 
           <Link
@@ -43,6 +43,3 @@ const NotFound = () => {
 };
 
 export default NotFound;
-
-  )
-}
