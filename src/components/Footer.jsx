@@ -56,9 +56,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <a href="/" className="flex items-center space-x-2 mb-6">
               <span className="text-3xl font-bold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">
-              <span className="text-3xl font-bold bg-gradient-to-r from-blue-500 via-teal-500 to-green-500 text-transparent bg-clip-text">
                 GameHub
-              </span>
               </span>
             </a>
             <p className="text-gray-300 mb-6 font-semibold">
@@ -82,9 +80,7 @@ export default function Footer() {
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
               <h3 className="text-lg font-bold mb-4 capitalize bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
-              <h3 className="text-lg font-bold mb-4 capitalize bg-gradient-to-r from-blue-500 to-teal-500 text-transparent bg-clip-text">
                 {category}
-              </h3>
               </h3>
               <ul className="space-y-3">
                 {links.map((link) => (

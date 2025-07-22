@@ -120,6 +120,8 @@ export function GlobalLocations() {
           <h2 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-4">
             Global Network Presence
           </h2>
+            Global Network Presence
+          </h2>
           <p className="text-xl md:text-2xl font-semibold text-gray-300 mb-8 max-w-3xl mx-auto">
             Strategic locations worldwide ensuring low latency for your players
           </p>
