@@ -5,6 +5,7 @@ const LegalPage = ({ title, lastUpdated, sections }) => {
     <div className="bg-gray-900 min-h-screen py-12 px-4">
       <div className="max-w-7xl mx-auto bg-gray-800 rounded-xl shadow-lg p-8 border border-gray-700">
         <h1 className="text-4xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+        </h1>
         <h1 className="text-4xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-green-500">
           {title}
         </h1>
