@@ -13,11 +13,22 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const Games = lazy(() => import("./pages/Games"));
 const MinecraftPage = lazy(() => import("./pages/Minecraft"));
+const ARKPage = lazy(() => import("./pages/ARK"));
+const FiveMPage = lazy(() => import("./pages/FiveM"));
+const TerrariaPage = lazy(() => import("./pages/Terraria"));
+const RustPage = lazy(() => import("./pages/Rust"));
+const PalworldPage = lazy(() => import("./pages/Palworld"));
 const VPSHostingShowcase = lazy(() => import("./pages/VPS"));
 const WebHosting = lazy(() => import("./pages/WebHosting"));
+const CommitmentPage = lazy(() => import("./pages/Commitment"));
+const CareersPage = lazy(() => import("./pages/Careers"));
+const ContactPage = lazy(() => import("./pages/Contact"));
+const InfrastructurePage = lazy(() => import("./pages/InfrastructurePage"));
 const CookiePolicy = lazy(() => import("./pages/CookiePolicy"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
+const RefundPolicy = lazy(() => import("./pages/RefundPolicy"));
+const UsagePolicy = lazy(() => import("./pages/UsagePolicy"));
 const GDPR = lazy(() => import("./pages/GDPR"));
 const AUP = lazy(() => import("./pages/Aup"));
 const AboutPage = lazy(() => import("./pages/About"));
@@ -86,13 +97,24 @@ function AppContent() {
             <Route path="/" element={<HomePage />} />
             <Route path="/games" element={<Games />} />
             <Route path="/minecraft" element={<MinecraftPage />} />
+            <Route path="/ark" element={<ARKPage />} />
+            <Route path="/fivem" element={<FiveMPage />} />
+            <Route path="/terraria" element={<TerrariaPage />} />
+            <Route path="/rust" element={<RustPage />} />
+            <Route path="/palworld" element={<PalworldPage />} />
             <Route path="/vps" element={<VPSHostingShowcase />} />
             <Route path="/webhosting" element={<WebHosting />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/commitment" element={<CommitmentPage />} />
+            <Route path="/careers" element={<CareersPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/infrastructure" element={<InfrastructurePage />} />
             <Route path="/partners" element={<PartnersPage />} />
             <Route path="/cookie-policy" element={<CookiePolicy />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
+            <Route path="/refund-policy" element={<RefundPolicy />} />
+            <Route path="/usage-policy" element={<UsagePolicy />} />
             <Route path="/gdpr" element={<GDPR />} />
             <Route path="/aup" element={<AUP />} />
             <Route path="*" element={<NotFound />} />

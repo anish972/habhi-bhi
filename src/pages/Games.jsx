@@ -52,6 +52,73 @@ const SAMPLE_GAMES = [
     badge: "NEW",
     promoTag: "Premium Hardware",
     slug: "ark"
+  },
+  {
+    id: 4,
+    title: "FiveM",
+    image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=400",
+    category: "Roleplay",
+    players: "1-32",
+    price: 12.99,
+    specs: "8GB RAM",
+    description: "GTA V multiplayer modification framework for custom servers.",
+    popularity: "High",
+    features: ["Custom Scripts", "Anti-Cheat", "Mod Support", "24/7 Support"],
+    rating: 4.9,
+    activeServers: "2,500+",
+    badge: "TRENDING",
+    promoTag: "Roleplay Ready",
+    slug: "fivem"
+  },
+  {
+    id: 5,
+    title: "Terraria",
+    image: "https://images.pexels.com/photos/163064/play-stone-network-networked-163064.jpeg?auto=compress&cs=tinysrgb&w=400",
+    category: "Adventure",
+    players: "1-8",
+    price: 3.99,
+    specs: "2GB RAM",
+    description: "2D sandbox adventure game with endless possibilities.",
+    popularity: "Medium",
+    features: ["World Management", "Mod Support", "Easy Setup"],
+    rating: 4.5,
+    activeServers: "800+",
+    promoTag: "Budget Friendly",
+    slug: "terraria"
+  },
+  {
+    id: 6,
+    title: "Rust",
+    image: "https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&w=400",
+    category: "Survival",
+    players: "1-200",
+    price: 15.99,
+    specs: "16GB RAM",
+    description: "Hardcore survival game where you must gather, build, and survive.",
+    popularity: "High",
+    features: ["Wipe Scheduling", "Plugin Manager", "Performance Monitoring"],
+    rating: 4.6,
+    activeServers: "1,800+",
+    badge: "HARDCORE",
+    promoTag: "High Performance",
+    slug: "rust"
+  },
+  {
+    id: 7,
+    title: "Palworld",
+    image: "https://images.pexels.com/photos/163064/play-stone-network-networked-163064.jpeg?auto=compress&cs=tinysrgb&w=400",
+    category: "Adventure",
+    players: "1-32",
+    price: 9.99,
+    specs: "8GB RAM",
+    description: "Creature collection survival game with multiplayer support.",
+    popularity: "High",
+    features: ["Dedicated Server", "World Saves", "Custom Settings"],
+    rating: 4.8,
+    activeServers: "3,200+",
+    badge: "HOT",
+    promoTag: "New Release",
+    slug: "palworld"
   }
 ];
 
@@ -245,7 +312,7 @@ export default function GamesPage() {
             <div className="flex gap-4">
               <FilterButton
                 label="Category"
-                options={['Survival', 'Adventure', 'FPS']}
+                options={['Survival', 'Adventure', 'FPS', 'Roleplay']}
                 value={categoryFilter}
                 onChange={setCategoryFilter}
               />
