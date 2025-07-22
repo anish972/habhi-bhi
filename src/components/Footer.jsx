@@ -59,6 +59,7 @@ export default function Footer() {
               <span className="text-3xl font-bold bg-gradient-to-r from-blue-500 via-teal-500 to-green-500 text-transparent bg-clip-text">
                 GameHub
               </span>
+              </span>
             </a>
             <p className="text-gray-300 mb-6 font-semibold">
               Premium game hosting, serving gamers worldwide since 2023.
@@ -83,6 +84,7 @@ export default function Footer() {
               <h3 className="text-lg font-bold mb-4 capitalize bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
               <h3 className="text-lg font-bold mb-4 capitalize bg-gradient-to-r from-blue-500 to-teal-500 text-transparent bg-clip-text">
                 {category}
+              </h3>
               </h3>
               <ul className="space-y-3">
                 {links.map((link) => (
