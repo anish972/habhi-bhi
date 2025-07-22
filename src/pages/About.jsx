@@ -1,13 +1,14 @@
 import React from 'react';
 import { Server, Users, Trophy, Target, Cpu, Heart, Shield, Globe } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+
 const TeamMember = ({ name, role, image, description }) => (
   <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 group">
     <div className="relative mb-4">
       <img
         src={image}
         alt={name}
-        className="w-32 h-32 rounded-full mx-auto object-cover border-2 border-blue-500/50 group-hover:border-purple-500/50 transition-all"
+        className="w-32 h-32 rounded-full mx-auto object-cover border-2 border-blue-500/50 group-hover:border-teal-500/50 transition-all"
       />
     </div>
     <div className="text-center">
@@ -23,7 +24,7 @@ const TeamMember = ({ name, role, image, description }) => (
 const Achievement = ({ icon: Icon, title, value }) => (
   <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 group text-center">
     <Icon className="w-8 h-8 text-blue-400 mb-4 mx-auto group-hover:scale-110 transition-transform" />
-    <div className="text-3xl font-bold text-white mb-2 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-purple-500 group-hover:text-transparent group-hover:bg-clip-text">
+    <div className="text-3xl font-bold text-white mb-2 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-teal-500 group-hover:text-transparent group-hover:bg-clip-text">
       {value}
     </div>
     <p className="text-gray-400 text-sm">{title}</p>
@@ -79,7 +80,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-green-500">
             Powering Gaming Dreams
           </h1>
 

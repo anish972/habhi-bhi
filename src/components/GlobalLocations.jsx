@@ -9,8 +9,8 @@ const locations = [
     description: "Strategic presence across major US tech hubs",
     locations: ["Chicago", "Dallas", "Los Angeles", "New York"],
     stats: "12+ Servers",
-    gradient: "from-blue-500 to-blue-600",
-    bgGlow: "group-hover:bg-blue-500/20",
+    gradient: "from-blue-500 to-teal-600",
+    bgGlow: "group-hover:bg-teal-500/20",
     progress: 95,
   },
   {
@@ -19,8 +19,8 @@ const locations = [
     description: "Coverage across key European gaming markets",
     locations: ["Frankfurt", "Paris"],
     stats: "6+ Servers",
-    gradient: "from-purple-500 to-purple-600",
-    bgGlow: "group-hover:bg-purple-500/20",
+    gradient: "from-teal-500 to-green-600",
+    bgGlow: "group-hover:bg-green-500/20",
     progress: 75,
   },
   {
@@ -29,8 +29,8 @@ const locations = [
     description: "Serving the fastest-growing gaming region",
     locations: ["Singapore"],
     stats: "2+ Servers",
-    gradient: "from-pink-500 to-pink-600",
-    bgGlow: "group-hover:bg-pink-500/20",
+    gradient: "from-green-500 to-teal-600",
+    bgGlow: "group-hover:bg-teal-500/20",
     progress: 60,
   },
 ];
@@ -56,7 +56,7 @@ const LocationCard = ({ region }) => (
         <region.icon className="w-full h-full text-white" />
       </div>
 
-      <h3 className="text-2xl font-bold text-white mb-3 bg-clip-text text-transparent bg-gradient-to-r from-white to-white group-hover:from-blue-500 group-hover:to-purple-500 transition-all duration-300">
+      <h3 className="text-2xl font-bold text-white mb-3 bg-clip-text text-transparent bg-gradient-to-r from-white to-white group-hover:from-blue-500 group-hover:to-teal-500 transition-all duration-300">
         {region.region}
       </h3>
 
@@ -68,7 +68,7 @@ const LocationCard = ({ region }) => (
       <div className="grid grid-cols-1 gap-4 mb-6">
         <div className="bg-gray-900/50 rounded-xl p-4 border border-gray-700/50 group-hover:border-blue-500/20 transition-all duration-300">
           <div className="text-sm text-gray-400 mb-1">Servers</div>
-          <div className="font-bold text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+          <div className="font-bold text-lg text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-500">
             {region.stats}
           </div>
         </div>
@@ -83,7 +83,7 @@ const LocationCard = ({ region }) => (
             key={location}
             className="flex items-center text-gray-300 group-hover:text-white transition-colors"
           >
-            <div className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 mr-2" />
+            <div className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 mr-2" />
             {location}
           </motion.div>
         ))}
@@ -109,7 +109,7 @@ export function GlobalLocations() {
       <div className="absolute inset-0 bg-grid-white/[0.05] -z-0" />
       <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent" />
       <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-blue-500/10 rounded-full blur-3xl" />
-      <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-purple-500/10 rounded-full blur-3xl" />
+      <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-teal-500/10 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <motion.div
@@ -117,9 +117,7 @@ export function GlobalLocations() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-4">
-            Global Network Presence
-          </h2>
+          <h2 className="text-4xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-teal-500 to-green-500 mb-4">
             Global Network Presence
           </h2>
           <p className="text-xl md:text-2xl font-semibold text-gray-300 mb-8 max-w-3xl mx-auto">
